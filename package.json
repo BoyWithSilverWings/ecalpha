@@ -1,0 +1,17 @@
+{
+  "name": "ecalpha",
+  "version": "1.0.0",
+  "description": "Farewell Day",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --output-style compressed --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "watch": "browser-sync start --server '.' --files '.'"
+  },
+  "author": "Boy With Silver Wings",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.5.2",
+    "nodemon": "^1.11.0"
+  }
+}
